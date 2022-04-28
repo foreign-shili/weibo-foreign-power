@@ -4,15 +4,16 @@
 
 > 此项目目前支持：
  * [Clash for Windows](#ClashForWindows)
+ * [Quantumult X](#Surge)
  * [Shadowrocket](#Surge)
  * [Surge](#Surge)
  * 欢迎 Pull Request 添加更多规则工具
-<!-- * [Quantumult X](#QuantumultX) -->
+ 
 ---
 
 ## 前情提要
 
-[IP属地功能升级公告 — @微博管理员](https://weibo.com/1934183965/LqvYeCdBu) （[文字版本](./IP%E5%B1%9E%E5%9C%B0%E5%8A%9F%E8%83%BD%E5%8D%87%E7%BA%A7%E5%85%AC%E5%91%8A.md)）
+[IP属地功能升级公告 — @微博管理员](https://weibo.com/1934183965/LqvYeCdBu) （[文字版本](./Misc/IP%E5%B1%9E%E5%9C%B0%E5%8A%9F%E8%83%BD%E5%8D%87%E7%BA%A7%E5%85%AC%E5%91%8A.md)）
 
 ---
 
@@ -36,27 +37,22 @@ parsers:
         - DOMAIN-SUFFIX,weico.cc,代理 # Weico 客户端
 ```
 
+包括 `IP-CIDR` 的规则在此：[weibo_clash.yaml](./modules/weibo_clash.yaml)
+
 保存并关闭您的文本编辑器。然后在 Profiles 中，重新刷新您的订阅。规则会自动应用到更新后的订阅。
 
 如果您正在使用其它的配置 Parser，您也可以将以上三个规则添加到 `prepend-rules` 的最顶端。
 <!-- ### <a id="QuantumultX"> -->
 
-### <a id="Surge"> Surge/Shadowrocket </a>
+### <a id="Surge"> Quantumult X/Surge/Shadowrocket </a>
 
-在 Surge/Shadowrocket 客户端中，导入并启用以下模块。
+在 Quantumult X、Shadowrocket 或 Surge 客户端中，导入并启用以下模块。
 
-`link`
+`https://raw.githubusercontent.com/foreign-shili/weibo-foreign-power/main/modules/weibo_weibo_quanx_srocket_surge.conf`
 
-或是手动创建新模块，并粘贴以下内容：
+或是手动创建新模块，拷贝以下文件的内容，然后粘贴到新模块中：
 
-```conf
-[Rule]
-DOMAIN-SUFFIX,weibo.com,PROXY
-DOMAIN-SUFFIX,weibo.cn,PROXY
-DOMAIN-SUFFIX,weico.cc,PROXY
-```
-
----
+[weibo_quanx_srocket_surge.conf](./modules/weibo_quanx_srocket_surge.conf)
 
 ## 分享阅读
 
