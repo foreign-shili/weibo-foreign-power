@@ -12,7 +12,7 @@
 
 ## 前情提要
 
-[IP属地功能升级公告 — @微博管理员](https://weibo.com/1934183965/LqvYeCdBu) （[文字版本](./Misc/IP%E5%B1%9E%E5%9C%B0%E5%8A%9F%E8%83%BD%E5%8D%87%E7%BA%A7%E5%85%AC%E5%91%8A.md)）
+[IP属地功能升级公告 — @微博管理员](https://weibo.com/1934183965/LqvYeCdBu) （[文字版本](./misc/IP%E5%B1%9E%E5%9C%B0%E5%8A%9F%E8%83%BD%E5%8D%87%E7%BA%A7%E5%85%AC%E5%91%8A.md)）
 
 ---
 
