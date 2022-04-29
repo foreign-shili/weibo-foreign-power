@@ -47,7 +47,7 @@ parsers:
 
 在 Quantumult X、Shadowrocket 或 Surge 客户端中，导入并启用以下模块。
 
-`https://raw.githubusercontent.com/foreign-shili/weibo-foreign-power/main/modules/weibo_weibo_quanx_srocket_surge.conf`
+`https://raw.githubusercontent.com/foreign-shili/weibo-foreign-power/main/modules/weibo_quanx_srocket_surge.conf`
 
 或是手动创建新模块，拷贝以下文件的内容，然后粘贴到新模块中：
 
@@ -60,6 +60,10 @@ parsers:
 #### 懒人方式：
 
 在相关客户端的规则设定中，将 `geosite:sina` 放置在需要代理规则的最顶端。这样做是最简单的，但可能会导致 sinaimg.cn（目前访问不影响地域显示）等图片、视频资源通过代理加载，造成流量浪费、加载缓慢等问题。
+
+以 SagerNet 为例：
+
+[![](https://i.ibb.co/SVn0vmh/Surge-Net-Matsuri.jpg)](https://i.ibb.co/SVn0vmh/Surge-Net-Matsuri.jpg)
 
 #### 勤劳方式：
 
