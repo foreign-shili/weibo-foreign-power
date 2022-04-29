@@ -4,9 +4,8 @@
 
 > 此项目目前支持：
  * [Clash for Windows](#ClashForWindows)
- * [Quantumult X](#Surge)
- * [Shadowrocket](#Surge)
- * [Surge](#Surge)
+ * [Quantumult X、Shadowrocket、Surge](#Surge)
+ * [v2ray 系、SagerNet、Matsuri](#v2ray)
  * 欢迎 Pull Request 添加更多规则工具
  
 ---
@@ -53,6 +52,18 @@ parsers:
 或是手动创建新模块，拷贝以下文件的内容，然后粘贴到新模块中：
 
 [weibo_quanx_srocket_surge.conf](./modules/weibo_quanx_srocket_surge.conf)
+
+### <a id="v2ray"> v2ray 系、SagerNet、Matsuri </a>
+
+请确保您的客户端拥有最新的 v2ray 路由规则（`geoip.dat`、`geosite.dat`）。推荐从 [Loyalsoldier/v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat) 更新您的路由规则数据库。
+
+#### 懒人方式：
+
+在相关客户端的规则设定中，将 `geosite:sina` 放置在需要代理规则的最顶端。这样做是最简单的，但可能会导致 sinaimg.cn（目前访问不影响地域显示）等图片、视频资源通过代理加载，造成流量浪费、加载缓慢等问题。
+
+#### 勤劳方式：
+
+*待添加*
 
 ## 分享阅读
 
