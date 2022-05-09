@@ -53,6 +53,14 @@ parsers:
 
 [weibo_quanx_srocket_surge.conf](./modules/weibo_quanx_srocket_surge.conf)
 
+如果遇到 Shadowrocket 中，此模块不起作用，请在模块的末尾添加：
+
+```
+DOMAIN-SUFFIX,cn,DIRECT
+```
+
+来修复问题（原因可能是因为在访问微博域名，处理规则时，配置文件中内置的 `DOMAIN-SUFFIX,cn,DIRECT` 被提前命中）。
+
 ### <a id="v2ray"> v2ray 系、SagerNet、Matsuri </a>
 
 请确保您的客户端拥有最新的 v2ray 路由规则（`geoip.dat`、`geosite.dat`）。推荐从 [Loyalsoldier/v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat) 更新您的路由规则数据库。
@@ -67,7 +75,32 @@ parsers:
 
 #### 勤劳方式：
 
-*待添加*
+其实也没有那么勤劳。
+
+在相关代理客户端，规则的 domain 条目中，添加以下条目：
+
+```
+domain:weibo.com
+domain:weibo.cn
+domain:weibo.cc
+```
+
+通常这样做就已经足够了。但如果还想更进一步，可以在 IP 条目中，添加以下条目：
+
+```
+180.149.138.0/24
+36.51.254.0/24
+49.7.40.0/24
+183.60.93.0/24
+49.7.36.0/24
+180.149.138.39
+39.97.130.0/24
+39.97.128.0/24
+```
+
+**请务必确保从上至下的顺序中，上面所添加的规则高于类如 `geoip:cn` `geosite:cn` 等直连配置。**
+
+以上配置参考了 [路由配置 · Project V 官方网站](https://www.v2ray.com/chapter_02/03_routing.html)。
 
 ## 分享阅读
 
